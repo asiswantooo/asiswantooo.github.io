@@ -1,0 +1,76 @@
+/* Mengatur tampilan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    padding-top: 56px;
+}
+
+/* Bagian hero / pembuka */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url("assets/keyboard.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+
+/* Foto profil */
+.foto-profil {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* Jarak antar section */
+.section-padding {
+    padding: 70px 0;
+}
+
+/* Gambar pada bagian galeri */
+.gambar-galeri {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+/* Efek ketika gambar disentuh mouse */
+.gambar-galeri:hover {
+    transform: scale(1.05);
+}
+
+/* Tombol scroll ke atas */
+#btnTop {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+    padding: 12px 17px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+/* Efek hover tombol scroll */
+#btnTop:hover {
+    background-color: #084298;
+}
+
+/* Agar tampilan lebih nyaman di layar kecil */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .foto-profil {
+        width: 130px;
+        height: 130px;
+    }
+}
